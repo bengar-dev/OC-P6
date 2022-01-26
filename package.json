@@ -1,0 +1,20 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "backend oc p6",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benysserp/OC-P6.git"
+  },
+  "author": "beng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benysserp/OC-P6/issues"
+  },
+  "homepage": "https://github.com/benysserp/OC-P6#readme"
+}
