@@ -1,6 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 
+const userRoutes = require('./routes/user');
+
 mongoose.connect('mongodb+srv://pressy:luwallz@beng.yyxbz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   { useNewUrlParser: true,
     useUnifiedTopology: true })
@@ -17,5 +19,7 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     next();
   });
+
+  app.use('/api/auth', userRoutes);
 
   module.exports = app;
