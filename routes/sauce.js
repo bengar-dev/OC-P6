@@ -9,6 +9,7 @@ const auth = require('../middleware/auth');
 router.get('/:id', auth, sauceCtrl.getSauce);
 router.get('/', auth, sauceCtrl.getAll);
 router.post('/', auth, multer, sauceCtrl.addSauce);
+router.put('/:id', auth, multer, sauceCtrl.editSauce);
 router.delete('/:id', auth, sauceCtrl.deleteSauce);
 
 module.exports = router;
